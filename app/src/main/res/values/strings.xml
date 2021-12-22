@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">News</string>
+    <string name="app_name" translatable="false">News</string>
+
+    <string name="home_fragment" translatable="false">Home Fragment</string>
+    <string name="favorites_fragment" translatable="false">Favorites Fragment</string>
+    <string name="detail_fragment" translatable="false">Detail Fragment</string>
+    <string name="search_fragment" translatable="false">Search Fragment</string>
+
 </resources>
