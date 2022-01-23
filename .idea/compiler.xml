@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="News.app" target="11" />
+      <module name="News.common.base" target="11" />
+      <module name="News.common.core.data.cache" target="11" />
+      <module name="News.common.core.data.local" target="11" />
+      <module name="News.common.core.data.network" target="11" />
+      <module name="News.common.core.data.repository" target="11" />
+      <module name="News.common.ui_components" target="11" />
+      <module name="News.common.utility" target="11" />
+      <module name="News.dfm.favorites" target="11" />
+      <module name="News.features.covid" target="11" />
+      <module name="News.features.headlines.data" target="11" />
+      <module name="News.features.headlines.presentation" target="11" />
+      <module name="News.features.news" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

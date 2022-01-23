@@ -11,6 +11,21 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/common/base" />
+            <option value="$PROJECT_DIR$/common/core" />
+            <option value="$PROJECT_DIR$/common/core/data" />
+            <option value="$PROJECT_DIR$/common/core/data/cache" />
+            <option value="$PROJECT_DIR$/common/core/data/network" />
+            <option value="$PROJECT_DIR$/common/core/data/repository" />
+            <option value="$PROJECT_DIR$/common/core/domain" />
+            <option value="$PROJECT_DIR$/common/ui_components" />
+            <option value="$PROJECT_DIR$/common/utility" />
+            <option value="$PROJECT_DIR$/dfm" />
+            <option value="$PROJECT_DIR$/dfm/favorites" />
+            <option value="$PROJECT_DIR$/features" />
+            <option value="$PROJECT_DIR$/features/covid" />
+            <option value="$PROJECT_DIR$/features/news" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

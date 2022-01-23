@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/homeFragment"
-        android:icon="@drawable/ic_home_black"
+        android:id="@id/news_navigation"
+        android:icon="@drawable/selector_home_icon"
         android:title="@string/home_fragment" />
 
     <item
-        android:id="@+id/searchFragment"
-        android:icon="@drawable/ic_search_black"
-        android:title="@string/search_fragment" />
+        android:id="@id/covidFragment"
+        android:icon="@drawable/selector_covid_virus_icon"
+        android:title="@string/covid_fragment" />
 
     <item
-        android:id="@+id/favoritesFragment"
-        android:icon="@drawable/ic_bookmarks_black"
+        android:id="@id/favoritesFragment"
+        android:icon="@drawable/selector_favorites_icon"
         android:title="@string/favorites_fragment" />
 </menu>

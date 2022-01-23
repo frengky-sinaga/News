@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">Cari</string>
+    <string name="latest_news">Berita Terbaru</string>
+    <string name="whats_new_today">Apa yang baru hari ini</string>
+
+    <string name="favorites">Favorit</string>
+    <string name="home">Beranda</string>
+    <string name="read_full_from_source">Baca selengkapnya dari sumber…</string>
+</resources>

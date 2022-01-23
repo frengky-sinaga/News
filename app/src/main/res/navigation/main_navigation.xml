@@ -3,41 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/homeFragment">
-
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.salve.news.ui.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
-    </fragment>
+    app:startDestination="@id/news_navigation">
 
     <fragment
         android:id="@+id/favoritesFragment"
-        android:name="com.salve.news.ui.FavoritesFragment"
-        android:label="fragment_favorites"
-        tools:layout="@layout/fragment_favorites" >
-        <action
-            android:id="@+id/action_favoritesFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
-    </fragment>
+        android:name="com.salve.news.dfm.favorites.FavoritesFragment"
+        android:label="favorites_fragment"/>
 
     <fragment
-        android:id="@+id/searchFragment"
-        android:name="com.salve.news.ui.SearchFragment"
+        android:id="@+id/covidFragment"
+        android:name="com.salve.news.ui.CovidFragment"
         android:label="fragment_search"
-        tools:layout="@layout/fragment_search" >
-        <action
-            android:id="@+id/action_searchFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_covid" />
 
-    <fragment
-        android:id="@+id/detailFragment"
-        android:name="com.salve.news.ui.DetailFragment"
-        android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
+    <include app:graph="@navigation/news_navigation" />
 </navigation>

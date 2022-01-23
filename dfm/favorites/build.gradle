@@ -1,0 +1,85 @@
+plugins {
+    id 'com.android.dynamic-feature'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs'
+}
+
+android {
+    compileSdk rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.salve.news.dfm.favorites"
+        minSdk rootProject.ext.minSdkVersion
+        targetSdk rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation project(":app")
+    implementation project(":common:base")
+    implementation project(":common:ui_components")
+    implementation project(":common:utility")
+    implementation project(":common:core:domain")
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    androidTestImplementation 'androidx.annotation:annotation:1.3.0'
+
+    implementation appDependencies.androidCore
+    implementation appDependencies.appCompat
+    implementation appDependencies.fragment
+
+    implementation lifecycleDependencies.liveData
+    implementation lifecycleDependencies.viewModel
+    implementation lifecycleDependencies.reactiveStream
+    implementation lifecycleDependencies.savedState
+    implementation lifecycleDependencies.runtime
+
+    implementation injectionDependencies.hiltAndroid
+    kapt injectionDependencies.hiltCompiler
+    implementation injectionDependencies.javaInject
+
+    implementation uiDependencies.material
+    implementation uiDependencies.coil
+
+    implementation otherDependencies.timber
+
+    implementation navigationDependencies.navigationUi
+    implementation navigationDependencies.navigationFragment
+
+    testImplementation testDependencies.junit
+    androidTestImplementation testDependencies.androidJUnit
+    androidTestImplementation testDependencies.androidEspresso
+
+    implementation kotlinDependencies.coroutinesAndroid
+}
+
+kapt {
+    correctErrorTypes true
+}
