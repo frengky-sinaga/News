@@ -2,11 +2,11 @@
 <resources>
     <string name="ui_components" translatable="false">Ui Components</string>
 
-    <string name="home_fragment" translatable="false">Home Fragment</string>
-    <string name="favorites_fragment" translatable="false">Favorites Fragment</string>
-    <string name="detail_fragment" translatable="false">Detail Fragment</string>
-    <string name="covid_fragment" translatable="false">Covid Fragment</string>
-    <string name="settings_fragment" translatable="false">Settings Fragment</string>
+    <string name="label_home_fragment" translatable="false">home_fragment</string>
+    <string name="label_favorites_fragment" translatable="false">favorites_fragment</string>
+    <string name="label_detail_fragment" translatable="false">detail_fragment</string>
+    <string name="label_covid_fragment" translatable="false">covid_fragment</string>
+    <string name="label_settings_fragment" translatable="false">settings_fragment</string>
 
     <string name="search">Search</string>
     <string name="latest_news">Latest News</string>

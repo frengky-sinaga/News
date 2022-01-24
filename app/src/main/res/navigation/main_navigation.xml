@@ -13,7 +13,7 @@
     <fragment
         android:id="@+id/covidFragment"
         android:name="com.salve.news.ui.CovidFragment"
-        android:label="fragment_search"
+        android:label="@string/label_covid_fragment"
         tools:layout="@layout/fragment_covid" />
 
     <include app:graph="@navigation/news_navigation" />

@@ -6,9 +6,9 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.salve.news.R
-import com.salve.news.databinding.ActivityMainBinding
 import com.salve.news.common.ui_components.utils.remove
 import com.salve.news.common.ui_components.utils.show
+import com.salve.news.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -33,13 +33,18 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigation.setupWithNavController(navController)
     }
 
-    private val listMainFragments: List<Int> =
-        listOf(R.id.homeFragment, R.id.covidFragment, R.id.favoritesFragment)
+    private fun listMainFragments(): List<String> {
+        return listOf(
+            getString(R.string.label_home_fragment),
+            getString(R.string.label_covid_fragment),
+            getString(R.string.label_favorites_fragment)
+        )
+    }
 
     private val onDestinationChanged =
         NavController.OnDestinationChangedListener { _, destination, _ ->
             binding.apply {
-                if (destination.id in listMainFragments) bottomNavigation.show()
+                if (destination.label in listMainFragments()) bottomNavigation.show()
                 else bottomNavigation.remove()
             }
         }

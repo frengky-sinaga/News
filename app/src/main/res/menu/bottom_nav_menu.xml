@@ -4,15 +4,15 @@
     <item
         android:id="@id/news_navigation"
         android:icon="@drawable/selector_home_icon"
-        android:title="@string/home_fragment" />
+        android:title="@string/label_home_fragment" />
 
     <item
         android:id="@id/covidFragment"
         android:icon="@drawable/selector_covid_virus_icon"
-        android:title="@string/covid_fragment" />
+        android:title="@string/label_covid_fragment" />
 
     <item
-        android:id="@id/favoritesFragment"
+        android:id="@id/dfm_favorites_navigation"
         android:icon="@drawable/selector_favorites_icon"
-        android:title="@string/favorites_fragment" />
+        android:title="@string/label_favorites_fragment" />
 </menu>
