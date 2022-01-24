@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/favoritesFragment"
-        android:name="com.salve.news.dfm.favorites.FavoritesFragment"
+        android:name="com.salve.news.dfm.favorites.ui.FavoritesFragment"
         android:label="favorites_fragment"/>
 
     <fragment
