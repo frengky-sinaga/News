@@ -12,9 +12,19 @@
 
     <fragment
         android:id="@+id/covidFragment"
-        android:name="com.salve.news.ui.CovidFragment"
+        android:name="com.salve.features.covid.CovidFragment"
         android:label="@string/label_covid_fragment"
         tools:layout="@layout/fragment_covid" />
 
     <include app:graph="@navigation/news_navigation" />
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.salve.features.news.detail.DetailFragment"
+        android:label="@string/label_detail_fragment"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="DetailArgs"
+            app:argType="com.salve.common.core.domain.model.Article" />
+    </fragment>
 </navigation>

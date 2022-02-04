@@ -21,7 +21,5 @@ class LoadingDialogFragment : DialogFragment(R.layout.dialog_fragment_loading) {
 
         val binding = DialogFragmentLoadingBinding.bind(view)
         binding.lottieAnimation.speed = 1.2f
-
-        dialog?.setCancelable(false)
     }
 }

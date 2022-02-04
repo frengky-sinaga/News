@@ -7,4 +7,6 @@
     <string name="favorites">Favorit</string>
     <string name="home">Beranda</string>
     <string name="read_full_from_source">Baca selengkapnya dari sumber…</string>
+
+    <string name="clear_cache">Bersihkan cache</string>
 </resources>

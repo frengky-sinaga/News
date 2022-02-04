@@ -8,6 +8,8 @@
       <module name="News.common.core.data.local" target="11" />
       <module name="News.common.core.data.network" target="11" />
       <module name="News.common.core.data.repository" target="11" />
+      <module name="News.common.navigation" target="11" />
+      <module name="News.common.settings" target="11" />
       <module name="News.common.ui_components" target="11" />
       <module name="News.common.utility" target="11" />
       <module name="News.dfm.favorites" target="11" />
@@ -15,6 +17,7 @@
       <module name="News.features.headlines.data" target="11" />
       <module name="News.features.headlines.presentation" target="11" />
       <module name="News.features.news" target="11" />
+      <module name="News.features.settings" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

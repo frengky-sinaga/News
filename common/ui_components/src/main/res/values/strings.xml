@@ -15,4 +15,6 @@
     <string name="favorites">Favorites</string>
     <string name="home">Home</string>
     <string name="read_full_from_source">Read full from source…</string>
+
+    <string name="clear_cache">Clear cache</string>
 </resources>

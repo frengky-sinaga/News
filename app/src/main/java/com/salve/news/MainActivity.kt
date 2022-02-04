@@ -1,11 +1,10 @@
-package com.salve.news.ui
+package com.salve.news
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
-import com.salve.news.R
 import com.salve.news.common.ui_components.utils.remove
 import com.salve.news.common.ui_components.utils.show
 import com.salve.news.databinding.ActivityMainBinding

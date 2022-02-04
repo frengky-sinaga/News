@@ -10,15 +10,18 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.salve.common.core.domain.utils.Resource
 import com.salve.features.news.R
 import com.salve.features.news.databinding.FragmentHomeBinding
+import com.salve.navigation.Navigation
 import com.salve.news.common.base.BaseFragment
 import com.salve.news.common.ui_components.dialog.ErrorDefaultDialogFragment
 import com.salve.news.common.ui_components.dialog.LoadingDialogFragment
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
+    @Inject lateinit var navigation: Navigation
     private val viewModel: HomeViewModel by viewModels()
     private var homeAdapter: HomeAdapter? = null
 
@@ -64,7 +67,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     }
 
     private fun setupRecyclerView() {
-        homeAdapter = HomeAdapter()
+        homeAdapter = HomeAdapter(navigation)
         binding.recyclerViewNews.apply {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(requireContext())

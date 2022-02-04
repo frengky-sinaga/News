@@ -32,7 +32,7 @@ class DetailFragment : BaseFragment<FragmentDetailBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        article = DetailFragmentArgs.fromBundle(arguments as Bundle).detailArgs
+        article = requireArguments().getSerializable("DetailArgs") as Article
         bookmarkStatus = article.isBookmarked
 
         binding.author.text = article.author

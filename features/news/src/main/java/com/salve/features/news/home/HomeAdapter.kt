@@ -1,5 +1,6 @@
 package com.salve.features.news.home
 
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
@@ -10,8 +11,10 @@ import com.salve.common.core.domain.model.Article
 import com.salve.common.utility.DateFormatUtils
 import com.salve.features.news.R
 import com.salve.features.news.databinding.ItemNewsBinding
+import com.salve.navigation.Navigation
 
-class HomeAdapter : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
+class HomeAdapter (private val navigation: Navigation) :
+    RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
 
     private val listContent = ArrayList<Article>()
 
@@ -38,8 +41,9 @@ class HomeAdapter : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
         fun bind(item: Article) {
 
             binding.root.setOnClickListener {
-                val direction = HomeFragmentDirections.actionHomeFragmentToDetailFragment(item)
-                it.findNavController().navigate(direction)
+                val bundle = Bundle()
+                bundle.putSerializable("DetailArgs", item)
+                navigation.toDetail(it.findNavController(), bundle)
             }
 
             binding.imageNews.load(item.urlToImage) {

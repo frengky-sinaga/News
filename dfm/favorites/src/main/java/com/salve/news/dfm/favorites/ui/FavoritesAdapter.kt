@@ -1,16 +1,20 @@
 package com.salve.news.dfm.favorites.ui
 
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.size.Scale
 import com.salve.common.core.domain.model.Article
 import com.salve.common.utility.DateFormatUtils
 import com.salve.features.news.R
+import com.salve.navigation.Navigation
 import com.salve.news.dfm.favorites.databinding.ItemNewsBookmarkedBinding
 
-class FavoritesAdapter : RecyclerView.Adapter<FavoritesAdapter.ViewHolder>() {
+class FavoritesAdapter(private val navigation: Navigation) :
+    RecyclerView.Adapter<FavoritesAdapter.ViewHolder>() {
 
     private val listContent = ArrayList<Article>()
 
@@ -38,7 +42,9 @@ class FavoritesAdapter : RecyclerView.Adapter<FavoritesAdapter.ViewHolder>() {
         fun bind(item: Article) {
 
             binding.root.setOnClickListener {
-
+                val bundle = Bundle()
+                bundle.putSerializable("DetailArgs", item)
+                navigation.toDetail(it.findNavController(), bundle)
             }
 
             binding.imageNews.load(item.urlToImage) {

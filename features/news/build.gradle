@@ -64,16 +64,13 @@ dependencies {
     implementation navigationDependencies.navigationUi
     implementation navigationDependencies.navigationFragment
 
-    testImplementation testDependencies.junit
-    androidTestImplementation testDependencies.androidJUnit
-    androidTestImplementation testDependencies.androidEspresso
-
     implementation kotlinDependencies.coroutinesAndroid
 
     implementation project(":common:base")
     implementation project(":common:ui_components")
     implementation project(":common:utility")
     implementation project(":common:core:domain")
+    implementation project(":common:navigation")
 }
 
 kapt {

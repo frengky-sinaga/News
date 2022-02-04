@@ -13,7 +13,6 @@ import com.salve.common.core.domain.utils.NewsCountry
 import com.salve.common.core.domain.utils.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import timber.log.Timber
 import javax.inject.Inject
 
 class NewsRepositoryImpl @Inject constructor(
@@ -28,7 +27,6 @@ class NewsRepositoryImpl @Inject constructor(
         object : NetworkBoundResource<List<Article>, List<ArticleDto>>() {
             override fun loadFromDB(): Flow<List<Article>> =
                 newsLocalDataSource.getTopHeadlines().map {
-                    Timber.d("$it")
                     it.toDomain()
                 }
 

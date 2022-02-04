@@ -42,10 +42,10 @@ android {
 }
 
 dependencies {
-    implementation appDependencies.androidCore
-    implementation appDependencies.appCompat
+    api appDependencies.androidCore
+    api appDependencies.appCompat
     implementation appDependencies.constraintLayout
-    implementation appDependencies.legacySupport
+    api appDependencies.legacySupport
     implementation appDependencies.activity
 
     implementation cacheDependencies.roomRuntime
@@ -54,25 +54,27 @@ dependencies {
 
     implementation injectionDependencies.hiltAndroid
     kapt injectionDependencies.hiltCompiler
-    implementation injectionDependencies.javaInject
+    api injectionDependencies.javaInject
 
-    implementation uiDependencies.material
+    api uiDependencies.material
 
-    implementation otherDependencies.timber
+    api otherDependencies.timber
     debugImplementation otherDependencies.leakCanary
 
-    implementation navigationDependencies.navigationUi
-    implementation navigationDependencies.navigationFragment
+    api navigationDependencies.navigationUi
+    api navigationDependencies.navigationFragment
 
-    implementation kotlinDependencies.coroutinesAndroid
+    api kotlinDependencies.coroutinesAndroid
 
-    implementation project(":common:base")
-    implementation project(":common:ui_components")
-    implementation project(":common:core:domain")
+    api project(":common:base")
+    api project(":common:ui_components")
+    api project(":common:navigation")
+    api project(":common:core:domain")
     implementation project(":common:core:data:repository")
     implementation project(":common:core:data:network")
     implementation project(":common:core:data:cache")
     implementation project(":features:news")
+    implementation project(":features:covid")
 }
 
 kapt {

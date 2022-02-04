@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/common/core/data/network" />
             <option value="$PROJECT_DIR$/common/core/data/repository" />
             <option value="$PROJECT_DIR$/common/core/domain" />
+            <option value="$PROJECT_DIR$/common/navigation" />
             <option value="$PROJECT_DIR$/common/ui_components" />
             <option value="$PROJECT_DIR$/common/utility" />
             <option value="$PROJECT_DIR$/dfm" />
@@ -26,6 +27,7 @@
             <option value="$PROJECT_DIR$/features" />
             <option value="$PROJECT_DIR$/features/covid" />
             <option value="$PROJECT_DIR$/features/news" />
+            <option value="$PROJECT_DIR$/features/settings" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

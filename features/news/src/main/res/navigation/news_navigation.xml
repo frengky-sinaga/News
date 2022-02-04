@@ -10,17 +10,5 @@
         android:name="com.salve.features.news.home.HomeFragment"
         android:label="@string/label_home_fragment"
         tools:layout="@layout/fragment_home">
-        <action
-            android:id="@+id/action_homeFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/detailFragment"
-        android:name="com.salve.features.news.detail.DetailFragment"
-        android:label="@string/label_detail_fragment"
-        tools:layout="@layout/fragment_detail">
-        <argument
-            android:name="DetailArgs"
-            app:argType="com.salve.common.core.domain.model.Article" />
     </fragment>
 </navigation>

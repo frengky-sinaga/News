@@ -6,14 +6,16 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "News"
+include ':dfm:favorites'
 include ':app'
 include ':common:base'
 include ':common:ui_components'
+include ':common:navigation'
 include ':common:core:data:network'
 include ':common:core:data:cache'
 include ':common:core:domain'
 include ':common:core:data:repository'
-include ':features:news'
 include ':common:utility'
+include ':features:news'
 include ':features:covid'
-include ':dfm:favorites'
+include ':features:settings'

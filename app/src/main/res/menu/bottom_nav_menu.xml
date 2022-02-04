@@ -12,7 +12,7 @@
         android:title="@string/label_covid_fragment" />
 
     <item
-        android:id="@id/dfm_favorites_navigation"
+        android:id="@id/favoritesFragment"
         android:icon="@drawable/selector_favorites_icon"
         android:title="@string/label_favorites_fragment" />
 </menu>

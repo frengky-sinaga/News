@@ -1,6 +1,7 @@
 package com.salve.news.di
 
 import com.salve.common.core.domain.use_case.NewsUseCase
+import com.salve.navigation.Navigation
 import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
@@ -10,4 +11,5 @@ import dagger.hilt.components.SingletonComponent
 interface DfmFavoritesModule {
 
     fun newsUseCase(): NewsUseCase
+    fun navigationDetail(): Navigation
 }

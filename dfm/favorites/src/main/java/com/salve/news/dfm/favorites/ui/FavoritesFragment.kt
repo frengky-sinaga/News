@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.salve.navigation.Navigation
 import com.salve.news.common.base.BaseFragment
 import com.salve.news.dfm.favorites.databinding.FragmentFavoritesBinding
 import com.salve.news.dfm.favorites.di.DaggerFavoritesComponent
@@ -15,6 +16,9 @@ import dagger.hilt.android.EntryPointAccessors
 import javax.inject.Inject
 
 class FavoritesFragment : BaseFragment<FragmentFavoritesBinding>() {
+
+    @Inject
+    lateinit var navigation: Navigation
 
     @Inject
     lateinit var viewModel: FavoritesViewModel
@@ -50,7 +54,7 @@ class FavoritesFragment : BaseFragment<FragmentFavoritesBinding>() {
     }
 
     private fun setupRecyclerView() {
-        favoritesAdapter = FavoritesAdapter()
+        favoritesAdapter = FavoritesAdapter(navigation)
         binding.recyclerViewNews.apply {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(requireContext())

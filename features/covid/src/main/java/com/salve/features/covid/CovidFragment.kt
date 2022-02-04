@@ -1,11 +1,11 @@
-package com.salve.news.ui
+package com.salve.features.covid
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.salve.features.covid.databinding.FragmentCovidBinding
 import com.salve.news.common.base.BaseFragment
-import com.salve.news.databinding.FragmentCovidBinding
 import timber.log.Timber
 
 class CovidFragment : BaseFragment<FragmentCovidBinding>() {
