@@ -52,4 +52,10 @@ class NewsRepositoryImpl @Inject constructor(
             newsLocalDataSource.setBookmarkArticle(article.toEntity(), newState)
         }
     }
+
+    override fun deleteAllData() {
+        appExecutors.diskIO().execute {
+            newsLocalDataSource.deleteAllData()
+        }
+    }
 }

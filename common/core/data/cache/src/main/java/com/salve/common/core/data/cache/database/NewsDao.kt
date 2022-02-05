@@ -18,4 +18,7 @@ interface NewsDao {
 
     @Update
     fun updateBookmarksArticle(article: ArticleEntity)
+
+    @Query("DELETE FROM articles_table")
+    fun deleteAllData()
 }

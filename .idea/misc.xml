@@ -15,9 +15,12 @@
         <entry key="..\:/Users/Frengky/Documents/Project/News/app/src/main/res/layout/fragment_search.xml" value="0.209375" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/app/src/main/res/layout/test.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
+        <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/background_button_blue.xml" value="0.1" />
+        <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/background_button_white.xml" value="0.1" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/background_search_edit_text.xml" value="0.2351851851851852" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/bottom_navigation_background.xml" value="0.240625" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/ic_arrow_back.xml" value="0.240625" />
+        <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/ic_arrow_forward.xml" value="0.111" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/ic_bookmark_active.xml" value="0.240625" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/ic_bookmark_default.xml" value="0.2351851851851852" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/ic_bookmarks_black.xml" value="0.23692307692307693" />
@@ -40,6 +43,7 @@
         <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/layout/dialog_fragment_loading.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/dfm/favorites/src/main/res/layout/fragment_favorites.xml" value="0.21041666666666667" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/dfm/favorites/src/main/res/layout/item_news_bookmarked.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Frengky/Documents/Project/News/features/covid/src/main/res/layout/fragment_covid.xml" value="0.1046875" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/features/news/src/main/res/drawable/background_button_find.xml" value="0.2351851851851852" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/features/news/src/main/res/drawable/background_item_news.xml" value="0.2351851851851852" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/features/news/src/main/res/drawable/ic_filter.xml" value="0.2351851851851852" />
@@ -50,7 +54,8 @@
         <entry key="..\:/Users/Frengky/Documents/Project/News/features/news/src/main/res/menu/menu_detail.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/features/news/src/main/res/menu/toolbar_detail_menu.xml" value="0.33" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/features/news/src/main/res/menu/toolbar_home_menu.xml" value="0.22447916666666667" />
-        <entry key="..\:/Users/Frengky/Documents/Project/News/features/settings/src/main/res/layout/fragment_settings.xml" value="0.33" />
+        <entry key="..\:/Users/Frengky/Documents/Project/News/features/settings/src/main/res/layout/dialog_settings.xml" value="0.25" />
+        <entry key="..\:/Users/Frengky/Documents/Project/News/features/settings/src/main/res/layout/fragment_settings.xml" value="0.22" />
       </map>
     </option>
   </component>

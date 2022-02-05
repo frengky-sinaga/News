@@ -9,4 +9,10 @@
     <string name="read_full_from_source">Baca selengkapnya dari sumber…</string>
 
     <string name="clear_cache">Bersihkan cache</string>
+    <string name="change_language">Ubah bahasa</string>
+    <string name="settings">Pengaturan</string>
+    <string name="do_you_want_to_proceed">Apakah kamu ingin melanjutkan?</string>
+    <string name="do_you_want_to_clear_cache">Apakah kamu ingin menghapus cache?</string>
+    <string name="do_you_want_to_change_language">Apakah kamu ingin mengganti bahasa?</string>
+    <string name="currently_indonesia_not_supported">Pemberitahuan: saat ini data dari server belum mendukung bahasa Indonesia</string>
 </resources>

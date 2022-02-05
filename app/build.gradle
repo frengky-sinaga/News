@@ -75,6 +75,7 @@ dependencies {
     implementation project(":common:core:data:cache")
     implementation project(":features:news")
     implementation project(":features:covid")
+    implementation project(":features:settings")
 }
 
 kapt {

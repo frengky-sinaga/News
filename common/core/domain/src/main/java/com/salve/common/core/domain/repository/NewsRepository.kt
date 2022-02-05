@@ -15,4 +15,6 @@ interface NewsRepository {
     fun getBookmarksArticle(): Flow<List<Article>>
 
     fun setBookmarkArticle(article: Article, newState: Boolean)
+
+    fun deleteAllData()
 }

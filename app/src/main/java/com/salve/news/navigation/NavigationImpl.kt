@@ -10,4 +10,8 @@ class NavigationImpl @Inject constructor() : Navigation {
     override fun toDetail(navController: NavController, bundle: Bundle) {
         navController.navigate(R.id.detailFragment, bundle)
     }
+
+    override fun toSettings(navController: NavController) {
+        navController.navigate(R.id.settingsFragment)
+    }
 }

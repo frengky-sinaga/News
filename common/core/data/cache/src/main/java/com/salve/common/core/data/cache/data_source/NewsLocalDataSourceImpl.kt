@@ -18,4 +18,6 @@ class NewsLocalDataSourceImpl @Inject constructor(private val newsDao: NewsDao) 
         article.isBookmarked = newState
         newsDao.updateBookmarksArticle(article)
     }
+
+    override fun deleteAllData() = newsDao.deleteAllData()
 }

@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/favoritesFragment"
         android:name="com.salve.news.dfm.favorites.ui.FavoritesFragment"
-        android:label="favorites_fragment"/>
+        android:label="favorites_fragment" />
 
     <fragment
         android:id="@+id/covidFragment"
@@ -27,4 +27,10 @@
             android:name="DetailArgs"
             app:argType="com.salve.common.core.domain.model.Article" />
     </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.salve.settings.SettingsFragment"
+        android:label="@string/label_settings_fragment"
+        tools:layout="@layout/fragment_settings" />
 </navigation>

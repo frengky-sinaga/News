@@ -11,4 +11,6 @@ interface NewsLocalDataSource {
     fun getBookmarksArticle(): Flow<List<ArticleEntity>>
 
     fun setBookmarkArticle(article: ArticleEntity, newState: Boolean)
+
+    fun deleteAllData()
 }
