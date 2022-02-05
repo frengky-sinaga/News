@@ -34,21 +34,20 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         super.onViewCreated(view, savedInstanceState)
 
         setupRecyclerView()
-        //setupToolbar()
+        setupToolbar()
 
         viewModel.getTopHeadlines.observe(viewLifecycleOwner) {
             when (it) {
                 is Resource.Success -> {
                     hideLoading()
-                    Timber.d("${it.data}")
-                    it.data?.let { contents -> homeAdapter?.setContents(contents) }
+                    homeAdapter?.setContents(it.data)
                 }
                 is Resource.Loading -> {
                     showLoading()
                 }
                 is Resource.Error -> {
                     hideLoading()
-                    val errorDialog = ErrorDefaultDialogFragment.newInstance(it.message.toString())
+                    val errorDialog = ErrorDefaultDialogFragment.newInstance(it.message)
                     errorDialog.show(childFragmentManager, ErrorDefaultDialogFragment.TAG)
                 }
             }
