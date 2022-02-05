@@ -1,4 +1,4 @@
-package com.salve.news.di
+package com.salve.news.di.cache
 
 import android.content.Context
 import androidx.room.Room

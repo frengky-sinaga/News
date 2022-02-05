@@ -1,4 +1,4 @@
-package com.salve.news.di
+package com.salve.news.di.domain
 
 import com.salve.common.core.domain.repository.NewsRepository
 import com.salve.common.core.domain.use_case.NewsUseCaseImpl

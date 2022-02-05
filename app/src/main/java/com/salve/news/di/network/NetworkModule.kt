@@ -1,4 +1,4 @@
-package com.salve.news.di
+package com.salve.news.di.network
 
 import com.salve.common.core.data.network.data_source.NewsRemoteDataSource
 import com.salve.common.core.data.network.data_source.NewsRemoteDataSourceImpl

@@ -1,4 +1,4 @@
-package com.salve.news.navigation
+package com.salve.news.di.navigation
 
 import android.os.Bundle
 import androidx.navigation.NavController

@@ -1,7 +1,6 @@
-package com.salve.news.di
+package com.salve.news.di.navigation
 
 import com.salve.navigation.Navigation
-import com.salve.news.navigation.NavigationImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

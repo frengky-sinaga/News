@@ -1,11 +1,13 @@
 package com.salve.common.core.data.repository.news
 
 import com.salve.common.core.data.cache.data_source.NewsLocalDataSource
+import com.salve.common.core.data.cache.model.ArticleEntity
 import com.salve.common.core.data.network.data_source.NewsRemoteDataSource
 import com.salve.common.core.data.network.model.ArticleDto
 import com.salve.common.core.data.network.utils.ApiResponse
 import com.salve.common.core.data.repository.AppExecutors
 import com.salve.common.core.data.repository.NetworkBoundResource
+import com.salve.common.core.domain.mapper.MapperAllLayers
 import com.salve.common.core.domain.model.Article
 import com.salve.common.core.domain.repository.NewsRepository
 import com.salve.common.core.domain.utils.NewsCategory
@@ -18,7 +20,8 @@ import javax.inject.Inject
 class NewsRepositoryImpl @Inject constructor(
     private val newsRemoteDataSource: NewsRemoteDataSource,
     private val newsLocalDataSource: NewsLocalDataSource,
-    private val appExecutors: AppExecutors
+    private val appExecutors: AppExecutors,
+    private val mapper: MapperAllLayers<Article, ArticleEntity, ArticleDto>
 ) : NewsRepository {
     override fun getTopHeadlines(
         country: NewsCountry,
@@ -26,8 +29,8 @@ class NewsRepositoryImpl @Inject constructor(
     ): Flow<Resource<List<Article>>> =
         object : NetworkBoundResource<List<Article>, List<ArticleDto>>() {
             override fun loadFromDB(): Flow<List<Article>> =
-                newsLocalDataSource.getTopHeadlines().map {
-                    it.toDomain()
+                newsLocalDataSource.getTopHeadlines().map { list ->
+                    list.map { entity -> mapper.entityToDomain().map(entity) }
                 }
 
             override fun shouldFetch(data: List<Article>?): Boolean = true
@@ -36,20 +39,20 @@ class NewsRepositoryImpl @Inject constructor(
                 newsRemoteDataSource.getTopHeadlines(country.countryCode, category.categoryName)
 
             override suspend fun saveCallResult(data: List<ArticleDto>) {
-                val newArticles = data.map { it.toEntity() }
+                val newArticles = data.map { mapper.dtoToEntity().map(it) }
                 newsLocalDataSource.insertTopHeadlines(newArticles)
             }
 
         }.asFlow()
 
     override fun getBookmarksArticle(): Flow<List<Article>> =
-        newsLocalDataSource.getBookmarksArticle().map {
-            it.toDomain()
+        newsLocalDataSource.getBookmarksArticle().map { list ->
+            list.map { entity -> mapper.entityToDomain().map(entity) }
         }
 
     override fun setBookmarkArticle(article: Article, newState: Boolean) {
         appExecutors.diskIO().execute {
-            newsLocalDataSource.setBookmarkArticle(article.toEntity(), newState)
+            newsLocalDataSource.setBookmarkArticle(mapper.domainToEntity().map(article), newState)
         }
     }
 

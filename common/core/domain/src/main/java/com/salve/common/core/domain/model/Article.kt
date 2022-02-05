@@ -3,7 +3,6 @@ package com.salve.common.core.domain.model
 import java.io.Serializable
 
 data class Article(
-    val id: Int,
     val author: String,
     val title: String,
     val content: String,

@@ -7,7 +7,8 @@ import javax.inject.Inject
 
 class NewsLocalDataSourceImpl @Inject constructor(private val newsDao: NewsDao) :
     NewsLocalDataSource {
-    override fun getTopHeadlines(): Flow<List<ArticleEntity>> = newsDao.getTopHeadlines()
+    override fun getTopHeadlines(): Flow<List<ArticleEntity>> =
+        newsDao.getTopHeadlines(NewsDataSourceUtils.queryLatest())
 
     override suspend fun insertTopHeadlines(articles: List<ArticleEntity>) =
         newsDao.insertTopHeadlines(articles)
