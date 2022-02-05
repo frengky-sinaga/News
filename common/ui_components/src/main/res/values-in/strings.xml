@@ -8,6 +8,8 @@
     <string name="home">Beranda</string>
     <string name="read_full_from_source">Baca selengkapnya dari sumber…</string>
 
+    <string name="news_detail">Rincian Berita</string>
+
     <string name="clear_cache">Bersihkan cache</string>
     <string name="change_language">Ubah bahasa</string>
     <string name="settings">Pengaturan</string>

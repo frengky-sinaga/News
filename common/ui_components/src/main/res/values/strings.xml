@@ -16,6 +16,8 @@
     <string name="home">Home</string>
     <string name="read_full_from_source">Read full from source…</string>
 
+    <string name="news_detail">News Detail</string>
+
     <string name="clear_cache">Clear cache</string>
     <string name="change_language">Change Language</string>
     <string name="settings">Settings</string>

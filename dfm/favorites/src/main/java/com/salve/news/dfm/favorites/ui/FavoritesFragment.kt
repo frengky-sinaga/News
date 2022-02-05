@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.salve.features.news.R
 import com.salve.navigation.Navigation
 import com.salve.news.common.base.BaseFragment
 import com.salve.news.dfm.favorites.databinding.FragmentFavoritesBinding
@@ -50,6 +51,11 @@ class FavoritesFragment : BaseFragment<FragmentFavoritesBinding>() {
 
         viewModel.getArticleBookmarks.observe(viewLifecycleOwner) {
             favoritesAdapter?.setContents(it)
+        }
+
+        binding.toolbar.apply {
+            setNavigationIcon(R.drawable.ic_arrow_back)
+            setNavigationOnClickListener { requireActivity().onBackPressed() }
         }
     }
 

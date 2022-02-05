@@ -36,9 +36,13 @@
         <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/ic_home_default.xml" value="0.23692307692307693" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/ic_loading_image.xml" value="0.18" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/ic_search_black.xml" value="0.23692307692307693" />
+        <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/ic_settings.xml" value="0.1" />
+        <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/ic_settings_active.xml" value="0.1825" />
+        <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/ic_settings_default.xml" value="0.1" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/selector_covid_virus_icon.xml" value="0.23692307692307693" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/selector_favorites_icon.xml" value="0.23692307692307693" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/selector_home_icon.xml" value="0.23692307692307693" />
+        <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/drawable/selector_settings_icon.xml" value="0.1" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/layout/dialog_fragment_error_default.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/common/ui_components/src/main/res/layout/dialog_fragment_loading.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Frengky/Documents/Project/News/dfm/favorites/src/main/res/layout/fragment_favorites.xml" value="0.21041666666666667" />

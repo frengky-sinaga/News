@@ -75,6 +75,7 @@ class DetailFragment : BaseFragment<FragmentDetailBinding>() {
                     else -> false
                 }
             }
+            backgroundTintList = null
         }
     }
 

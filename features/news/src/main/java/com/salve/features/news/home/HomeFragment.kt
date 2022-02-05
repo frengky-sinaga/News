@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.salve.common.core.domain.utils.Resource
@@ -15,13 +16,13 @@ import com.salve.news.common.base.BaseFragment
 import com.salve.news.common.ui_components.dialog.ErrorDefaultDialogFragment
 import com.salve.news.common.ui_components.dialog.LoadingDialogFragment
 import dagger.hilt.android.AndroidEntryPoint
-import timber.log.Timber
 import javax.inject.Inject
 
 @AndroidEntryPoint
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
-    @Inject lateinit var navigation: Navigation
+    @Inject
+    lateinit var navigation: Navigation
     private val viewModel: HomeViewModel by viewModels()
     private var homeAdapter: HomeAdapter? = null
 
@@ -58,6 +59,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         binding.toolbar.setOnMenuItemClickListener {
             when (it.itemId) {
                 R.id.itemCollectionsBookmark -> {
+                    navigation.toFavorites(binding.root.findNavController())
                     true
                 }
                 else -> false

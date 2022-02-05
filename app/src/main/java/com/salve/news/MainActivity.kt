@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         return listOf(
             getString(R.string.label_home_fragment),
             getString(R.string.label_covid_fragment),
-            getString(R.string.label_favorites_fragment)
+            getString(R.string.label_settings_fragment),
         )
     }
 
